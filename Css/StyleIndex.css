@@ -41,14 +41,14 @@
 body {
     margin:100px;
     margin-top: 10px;
-    background-color: rgb(140, 164, 236);
+    background-color: rgb(240, 216, 136);
 
 }
 
 .principalJogo{
  position: absolute;
  margin-left: 210;
- margin-top: 380;
+ margin-top: 1000;
  display: inline-block;
 }
 
@@ -63,6 +63,7 @@ body {
     width: 800px;
     display: inline-block;
     margin-top: -600px;
+    margin-bottom: 15px;
 }
 
 .PainelImagens img.Img {
@@ -99,8 +100,8 @@ body {
     margin: 2px;
 }
 .Social {
-    margin-top: 900px;
-    margin-left:0px;
+    margin-top: 280px;
+    margin-left: 250px;
     position: absolute;
 }
 .thumbnail{
@@ -127,4 +128,19 @@ body {
 }
 .inforvideo{
     margin-top: 450px;
+}
+.Gif1{
+    position: absolute;
+    margin-top: 850px;
+    margin-left: 1090px;
+    width: 250px;
+    height: 600px;
+}
+.Gif2{
+    position: absolute;
+    margin-top: 900px;
+    margin-left: 0px;
+    width: 250px;
+    height: 500px;
+
 }
