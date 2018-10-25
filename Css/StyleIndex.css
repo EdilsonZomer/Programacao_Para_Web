@@ -2,7 +2,6 @@
     position: absolute;
     height: 400px;
     width: 1250px;
-    
 }
 
 .MenuSuperior {
@@ -86,28 +85,24 @@ body {
     font-style: oblique;
     font-weight: bold;
 }
-.Info{
-    margin-top:5px;
-    margin-left: 60px;
-    margin-bottom: 0;
-}
-.Info2{
-    margin-top: 0px;
-    margin-left: 60px;
-}
-.infor{
+
+.infor_Jogo{
     text-align: center;
     margin: 2px;
 }
 .Social {
-    margin-top: 280px;
-    margin-left: 250px;
+    margin-top: 750px;
+    margin-left: 30px;
     position: absolute;
 }
 .thumbnail{
     background-color: rgb(223, 231, 102);
     border: 2px solid black;
     min-height: 300px;
+}
+.thumbnail img.capa{
+    width: 250px;
+    height: 130px;
 }
 .cart{
     position: absolute;
@@ -119,10 +114,6 @@ body {
     height: 250px;
     border-block-end:2px solid  black;
 }
-.thumbnail img.capa{
-    width: 250px;
-    height: 130px;
-}
 .video{
     border: 2px solid black;
 }
@@ -131,14 +122,14 @@ body {
 }
 .Gif1{
     position: absolute;
-    margin-top: 850px;
-    margin-left: 1090px;
-    width: 250px;
-    height: 600px;
+    margin-top: 900px;
+    margin-left: 1070px;
+    width: 300px;
+    height: 550px;
 }
 .Gif2{
     position: absolute;
-    margin-top: 900px;
+    margin-top: 930px;
     margin-left: 0px;
     width: 250px;
     height: 500px;
