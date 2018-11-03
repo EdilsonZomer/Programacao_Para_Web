@@ -40,7 +40,8 @@
 body {
     margin:100px;
     margin-top: 10px;
-    background-color: rgb(240, 216, 136);
+   /*background-color: rgb(240, 216, 136);*/
+   background-color: black;
 
 }
 
@@ -114,12 +115,7 @@ body {
     height: 250px;
     border-block-end:2px solid  black;
 }
-.video{
-    border: 2px solid black;
-}
-.inforvideo{
-    margin-top: 450px;
-}
+
 .Gif1{
     position: absolute;
     margin-top: 900px;
