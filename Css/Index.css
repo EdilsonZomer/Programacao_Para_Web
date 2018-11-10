@@ -103,9 +103,46 @@ body {
     margin-top: -50px;
 }
 /*FIM DO STYLE CARRINHO*/
-
-    
-
+/*inicio DO STYLE SLIDER DE IMAGENS*/
+#container {
+    width: 480px;
+    height: auto;
+    margin: 150px auto;
+    background-color: #ddd;
+}
+.principal {
+    width: 480px;
+    height: 270px;
+    overflow: hidden;
+}
+.slide {
+    display: flex;
+    width: 400%;
+    transition: all .6s;
+}
+label img{
+    width: 120px;
+    cursor: pointer;
+    float: left;
+    opacity: .3;
+    transition: .4s;
+}
+#foto2:checked ~ .principal .slide{
+    margin-left: -100%;
+}
+#foto3:checked ~ .principal .slide {
+    margin-left: -200%;
+}
+#foto4:checked ~ .principal .slide {
+    margin-left: -300%;
+}
+input[name="grupo"]{
+    display: none;
+}
+input[name="grupo"]:checked + label img{
+    opacity: .9;
+}
+/*FIM DO STYLE SLIDER DE IMAGENS*/
 
 
 

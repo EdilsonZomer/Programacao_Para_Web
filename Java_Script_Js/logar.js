@@ -1,17 +1,17 @@
-function acesso(form){
+function logar(form){
 
 /*chegar nome e senha*/ 
 
+form.nome.value = form.nome.value.toLowerCase()
+form.senha.value = form.senha.value.toLowerCase()
 
-form.nome.value = form.name.value
-form.senha.value = form.senha.value
+if(form.nome.value == "chris" && form.senha.value == "123"){
+    console.log("chegou?");
 
-if(form.name.value == "chris" && form.senha.value == "123"){
-location ="acesso.html"
+location ="logado.html"
 }
 else{
-    form.nome.value=""
-    form.senha.value=""
+   
     alert("Dados incorretos")
 }
 }
