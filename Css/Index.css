@@ -3,21 +3,28 @@ body {
     padding: 0;
     background: #ccc;
 }
+/*INICIO DO STYLE DROPDOWN*/
 .dropdown {
     float: left;
     margin: 50px;
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 20px;
 }
+
 .dropdown ul {
     font: 16px arial , tahoma , verdana;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .dropdown ul li {
     float: left;
     position: relative;
     display: block;
 }
+
 .dropdown ul li a {
     color: #555;
     background: #fff;
@@ -27,25 +34,93 @@ body {
      border-top: 1px solid #555;
      display: block;
 }
+
 .dropdown li ul {
     display: none;
 }
+
 .dropdown ul li a:hover {
     background: #066;
     color: #fff;
 }
+
 .dropdown li:hover ul {
     display: block;
     position: relative;
 }
+
 .dropdown li:hover li {
     float: none;
     font-size: 12px;
 }
+
 .dropdown li:hover a{
     background: #333;
     color: fff;
 }
+
 .dropdown li:hover li a:hover {
     background: #222;
 }
+
+/*FIM DO STYLE DROPDOWN*/
+/*INICIO DO STYLE PESQUISA*/
+.Pesquisa {
+    position: absolute;
+    width: 400px;
+    height: 40px;
+    margin-left: 728px;
+    margin-top: 20px;
+}
+
+.texto {
+    width: 350px;
+    height: 50px;
+    float: left;
+    font: arial;
+    font-size: 20px;
+    border: 1px solid #2f4550;
+}
+
+.texto:focus{
+     border: solid 2px #2f4550;
+}
+
+.btn {
+    width: 30px;
+    height: 40px;
+    background: #2f4550;
+    padding: 5px 10px;
+}
+/*FIM DO STYLE PESQUISA*/
+/*FIM DO STYLE CARRINHO*/
+.carrinho {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin-top: 20PX;
+    margin-left: 1130PX;
+}
+/*FIM DO STYLE CARRINHO*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
