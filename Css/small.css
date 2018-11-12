@@ -1,0 +1,36 @@
+/*
+.umadiv {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #FF2244;
+}*/
+.dropdown {
+    width: 500px;
+    height: 500px;
+}
+.logoVersao{
+    width: 500px;
+    height: 500px;
+}
+.Pesquisa {
+    width: 500px;
+    height: 500px;
+}
+.btn{
+    width: 500px;
+    height: 500px;
+}
+#historico{
+    width: 500px;
+    height: 500px;
+}
+.container{
+    width: 500px;
+    height: 500px;
+}
+.slide{
+    width: 500px;
+    height: 500px;
+}
