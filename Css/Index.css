@@ -1,76 +1,8 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #ccc;
-}
-/*INICIO DO STYLE DROPDOWN*/
-.dropdown {
-    float: left;
-    margin: 50px;
-    position: absolute;
-    margin-left: 350px;
-    margin-top: -80px;
-}
-
-.dropdown ul {
-    font: 16px arial , tahoma , verdana;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown ul li {
-    float: left;
-    position: relative;
-    display: block;
-}
-
-.dropdown ul li a {
-    color: #555;
-    background: #fff;
-     text-decoration: none;
-     margin: 0 1px;
-     padding: 15px 20px;
-     border-top: 1px solid #555;
-     display: block;
-}
-
-.dropdown li ul {
-    display: none;
-}
-
-.dropdown ul li a:hover {
-    background: #066;
-    color: #fff;
-}
-
-.dropdown li:hover ul {
-    display: block;
-    position: relative;
-}
-
-.dropdown li:hover li {
-    float: none;
-    font-size: 12px;
-}
-
-.dropdown li:hover a{
-    background: #333;
-    color: fff;
-}
-
-.dropdown li:hover li a:hover {
-    background: #222;
-}
-
-/*FIM DO STYLE DROPDOWN*/
 /*INICIO DO STYLE PESQUISA*/
 .Pesquisa {
     position: absolute;
     width: 400px;
     height: 40px;
-    margin-left: 963px;
-    margin-top: -80px;
 }
 
 .texto {
@@ -103,46 +35,6 @@ body {
     margin-top: -50px;
 }
 /*FIM DO STYLE CARRINHO*/
-/*inicio DO STYLE SLIDER DE IMAGENS*/
-#container {
-    width: 480px;
-    height: auto;
-    margin: 100px auto;
-    background-color: #ddd;
-}
-.principal {
-    width: 480px;
-    height: 270px;
-    overflow: hidden;
-}
-.slide {
-    display: flex;
-    width: 400%;
-    transition: all .6s;
-}
-label img{
-    width: 120px;
-    cursor: pointer;
-    float: left;
-    opacity: .3;
-    transition: .4s;
-}
-#foto2:checked ~ .principal .slide{
-    margin-left: -100%;
-}
-#foto3:checked ~ .principal .slide {
-    margin-left: -200%;
-}
-#foto5:checked ~ .principal .slide {
-    margin-left: -300%;
-}
-input[name="grupo"]{
-    display: none;
-}
-input[name="grupo"]:checked + label img{
-    opacity: .9;
-}
-/*FIM DO STYLE SLIDER DE IMAGENS*/
 /*INICIO STYLE GIF's*/
 .over{
     margin-top: -440px;
@@ -151,24 +43,23 @@ input[name="grupo"]:checked + label img{
     width: 300px;
     height: 340px;
 }
-.tracer {
-    margin-top: -440px;
-    margin-left: 1000px;
+/*FIM STYLE GIF's*/
+/*INICIO CARRINHO DE COMPRA*/
+.carrinho {
+    margin-top: -80px;
+    margin-left: 1132px;
     position: absolute;
-    width: 400px;
-    height: 340px;
+    width: 52px;
+    height: 52px;
+}
+.user {
+    margin-top: -78px;
+    margin-left: 1190px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
