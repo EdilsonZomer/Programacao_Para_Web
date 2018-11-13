@@ -1,4 +1,4 @@
-function logar2(form){
+function logar(form){
 
   
     /*chegar nome e senha*/ 
@@ -6,7 +6,7 @@ function logar2(form){
     form.nome.value = form.nome.value.toLowerCase()
     form.senha.value = form.senha.value.toLowerCase()
     
-    if(form.nome.value == "chris" && form.senha.value == "slifer"){
+    if(localStorage.getItem(nome.value) == "chris" && localStorage.getItem(senha.value) == "slifer"){
        
         alert("LOGADO! \n Bem vindo " + form.nome.value);
     }
