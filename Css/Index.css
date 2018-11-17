@@ -69,7 +69,7 @@ body {
     position: absolute;
     width: 400px;
     height: 40px;
-    margin-left: 963px;
+    margin-left: 728px;
     margin-top: -80px;
 }
 
@@ -111,7 +111,7 @@ body {
     background-color: #ddd;
 }
 .principal {
-    width: 480px;
+    width: 800px;
     height: 270px;
     overflow: hidden;
 }
@@ -133,7 +133,7 @@ label img{
 #foto3:checked ~ .principal .slide {
     margin-left: -200%;
 }
-#foto5:checked ~ .principal .slide {
+#foto4:checked ~ .principal .slide {
     margin-left: -300%;
 }
 input[name="grupo"]{
@@ -142,7 +142,43 @@ input[name="grupo"]{
 input[name="grupo"]:checked + label img{
     opacity: .9;
 }
-/*FIM DO STYLE SLIDER DE IMAGENS*/
+/*INICIO DO STYLE PESQUISA*/
+.Pesquisa {
+    position: absolute;
+    width: 400px;
+    height: 40px;
+}
+
+.texto {
+    width: 350px;
+    height: 50px;
+    float: left;
+    font: arial;
+    font-size: 20px;
+}
+
+.texto:focus{
+    border: solid 2px #2f4550;
+}
+
+.btn {
+    width: 30px;
+    height: 40px;
+    background: #2f4550;
+    padding: 5px 10px;
+}
+/*FIM DO STYLE PESQUISA*/
+/*FIM DO STYLE CARRINHO*/
+
+.logoVersao {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    margin-left: -150px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+/*FIM DO STYLE CARRINHO*/
 /*INICIO STYLE GIF's*/
 .over{
     margin-top: -440px;
@@ -151,24 +187,23 @@ input[name="grupo"]:checked + label img{
     width: 300px;
     height: 340px;
 }
-.tracer {
-    margin-top: -440px;
-    margin-left: 1000px;
+/*FIM STYLE GIF's*/
+/*INICIO CARRINHO DE COMPRA*/
+.carrinho {
+    margin-top: -80px;
+    margin-left: 1132px;
     position: absolute;
-    width: 400px;
-    height: 340px;
+    width: 52px;
+    height: 52px;
+}
+.user {
+    margin-top: -78px;
+    margin-left: 1190px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,17 +1,19 @@
-function logar(form){
+function logar(form) {
 
-  
-    /*chegar nome e senha*/ 
-    
     form.nome.value = form.nome.value.toLowerCase()
     form.senha.value = form.senha.value.toLowerCase()
-    
-    if(localStorage.getItem(nome.value) == "chris" && localStorage.getItem(senha.value) == "slifer"){
-       
+
+
+
+    if (form.nome.value == (JSON.parse(localStorage.getItem(1)).nome),
+     form.senha.value  == (JSON.parse(localStorage.getItem(1)).senha)) {
+
         alert("LOGADO! \n Bem vindo " + form.nome.value);
     }
-    else{
-       
+    else {
+
         alert("Dados incorretos");
-}
+
+
+    }
 }
