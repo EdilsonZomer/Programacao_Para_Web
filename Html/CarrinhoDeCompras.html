@@ -5,9 +5,22 @@
 
     <title>CarrinhoDeCompras</title>
     <meta charset="UTF-8">
-    <script src ="../Java_Script_Js/......"></script>
+    <script src ="../Java_Script_Js/AdicionarAoCarrinho.js"></script>
     
 </head>
+
+CARRINHO DE COMPRAS:
+
+<div id="listar"></div>
+
+<script>
+    var lista = JSON.parse(localStorage.getItem(carrinho))
+    document.querySelector("#listar").innerHTML = lista
+  
+   
+    
+
+</script>
 
 
 <body>
