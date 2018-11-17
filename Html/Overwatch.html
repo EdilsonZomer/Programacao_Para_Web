@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Overwatch</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../Css/Index.css">
+    <script src ="../Java_Script_Js/jogoNovo.js"></script>
+</head>
+
+<body>
+
+
+    <img src="../Imagens/overbuy.jpg" alt="" />
+    <div id="preco"></div>
+
+    <script>
+        var preco = JSON.parse(localStorage.getItem(2)).valor
+        document.querySelector("#preco").innerHTML = preco
+        
+       
+        
+    
+    </script>
+
+    <input  placeholder=Quantidade... min= "0" type="number">
+
+    <button onclick="alert('add novo jogo')">addtoCart</button>
+
+
+
+</body>
+
+</html>
