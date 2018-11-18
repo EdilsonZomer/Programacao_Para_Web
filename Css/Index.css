@@ -157,7 +157,6 @@ main {
     height: 40px;
 }
 .lancamento {
-    background-color: #2f4550;
     color:white;
     padding:20px;
     text-transform: uppercase;
@@ -223,6 +222,9 @@ li.slick-active button{
 .slick-dots li {
     display: inline-block;
 }
+
+/*==========================TABELAS DOS JOGOS======================*/
+
 
 
 
