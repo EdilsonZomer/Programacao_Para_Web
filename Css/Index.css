@@ -29,6 +29,7 @@ main {
     margin-left: 13px;
     display: inline-block;
     float: left;
+    margin-top: 13px;
 }
 
 .redes-sociais {
@@ -68,7 +69,7 @@ main {
 }
 
 .menu {
-    width: 60%;
+    width: 94%;
     float: left;
 }
 /*===========HEADER-2 - Menu================*/
@@ -118,10 +119,11 @@ main {
 }
 
 .busca input {
+    right: 14%;
     height: 36px;
     margin-top: 10px;
     padding: 12px;
-    width: 304px;
+    width: 400px;
     background-image: url('../Imagens/busca.png');
     background-repeat: no-repeat;
     background-position: 96%;
@@ -156,11 +158,46 @@ main {
     width: 40px;
     height: 40px;
 }
-.lancamento {
-    color:white;
-    padding:20px;
-    text-transform: uppercase;
+.Mais-Jogados ul{
+    list-style: none;
+    position: relative;
 }
+
+.Mais-Jogados ul li {
+    width: 60px;
+    float: left;
+    width: 100%;
+    background: #FA7838;
+}
+
+.Mais-Jogados a {
+    font-size: 24px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase
+}
+
+.Mais-Jogados ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.Mais-Jogados ul li:hover ul {
+    visibility: visible;
+}
+
+.Mais-Jogados a:hover {
+    color: white;
+}
+
+.Mais-Jogados ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
 
 button.slick-prev {
     font-size: 0px;
@@ -224,33 +261,3 @@ li.slick-active button{
 }
 
 /*==========================TABELAS DOS JOGOS======================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
