@@ -1,5 +1,5 @@
-let contas = 'contas';
-let listaDeCadastros = JSON.parse(localStorage.getItem(contas)) || [];
+var contas = 'contas';
+var listaDeCadastros = JSON.parse(localStorage.getItem(contas)) || [];
 
 function cadastrar(form){
 
@@ -10,12 +10,14 @@ function cadastrar(form){
 
     }
 
-    let clienteSerializado = JSON.stringify(cliente);
+    listaDeCadastros.push(cliente);
+    localStorage.setItem(contas, JSON.stringify(listaDeCadastros))
 
-    localStorage.setItem(1, clienteSerializado);
+    /*let clienteSerializado = JSON.stringify(cliente);
 
-        /*listaDeCadastros.push(cliente);
-        localStorage.setItem(contas, JSON.stringify(listaDeCadastros) );*/
+    localStorage.setItem(1, clienteSerializado);*/
+
+       
     
 
   

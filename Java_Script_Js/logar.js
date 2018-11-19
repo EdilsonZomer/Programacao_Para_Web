@@ -1,3 +1,5 @@
+
+alert('ss')
 function logar(form) {
 
     form.nome.value = form.nome.value.toLowerCase()
@@ -5,8 +7,8 @@ function logar(form) {
 
 
 
-    if (form.nome.value == (JSON.parse(localStorage.getItem(1)).nome),
-     form.senha.value  == (JSON.parse(localStorage.getItem(1)).senha)) {
+    if (form.nome.value == (JSON.parse(localStorage.getItem(listaDeCadastros[0]))),
+     form.senha.value  == (JSON.parse(localStorage.getItem(listaDeCadastros[0])))) {
 
         alert("LOGADO! \n Bem vindo " + form.nome.value);
     }
@@ -16,4 +18,5 @@ function logar(form) {
 
 
     }
+
 }
