@@ -69,11 +69,9 @@ main {
 }
 
 .menu {
-    width: 94%;
+    width: 58%;
     float: left;
 }
-/*===========HEADER-2 - Menu================*/
-/*===========DROPDOW - Menu================*/
 
 .menu ul{
     list-style: none;
@@ -111,6 +109,20 @@ main {
     border-bottom: solid 1px #ccc;
 }
 
+.carrinhodecompras {
+    width: 62px;
+    height: 50px;
+    margin-left: 568px;
+    position: absolute;
+}
+.usuario {
+    width: 62px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 669px;
+    position: absolute;
+
+}
 
 .busca {
     width: 40%;
@@ -134,17 +146,6 @@ main {
     border: 2px solid;
 }
 
-.col-100 {
-    width: 100%;
-    float: left;
-    position: relative;
-}
-/*===========HEADER-2 - Menu ================*/
-/*===========SLIDER IMAGENS ================*/
-.img-principal {
-    width: 150px;
-    height: 500px;
-}
 .SocialLinkdin {
     margin-top: -4px;
     width:46px;
@@ -157,6 +158,18 @@ main {
 .Instagram {
     width: 40px;
     height: 40px;
+}
+/*===========HEADER-2 - Menu================*/
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.img-principal {
+    width: 150px;
+    height: 500px;
 }
 .Mais-Jogados ul{
     list-style: none;

@@ -1,14 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
+*
+{
+  margin: auto;
 }
-
-
 .container {
-    width: 100%;
+    width: 95%;
     height: 500px;
-    display: flex;
+    display: table-row-group;
     margin:20px;
   }
 
