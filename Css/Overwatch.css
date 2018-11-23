@@ -1,0 +1,22 @@
+.main-principal{
+    display: inline-flex;
+}
+
+.capaoverwatch {
+    width: 250px;
+    height: 250px;
+}
+.tramaOver {
+    font-size: 14px;
+    color: #fff;
+    margin: 30px;
+}
+
+.tramaOver h2 {
+    font-size: 31px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+    

@@ -3,9 +3,9 @@
   margin: auto;
 }
 .container {
-    width: 95%;
+    width: 90%;
     height: 500px;
-    display: table-row-group;
+    display: inline;
     margin:20px;
   }
 
@@ -27,15 +27,15 @@
     border-radius: 25px 25px 0 0 ;
 }
 .card-logo {
-  width: 63px;
+    width: 63px;
 }
 
 .product-img {
-  position: absolute;
-  left: 0;
-  margin-top: 42px;
-  margin-left: 123px;
-  width: 210px;
+    position: absolute;
+    left: 0;
+    margin-top: 42px;
+    margin-left: 123px;
+    width: 210px;
 }
 
 .product-detail {

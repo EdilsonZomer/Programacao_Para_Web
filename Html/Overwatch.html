@@ -1,35 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../Css/Index.css">
+        <link rel="stylesheet" href="../Css/Card.css">
+        <link rel="stylesheet" href="../Css/Overwatch.css">
+    </head>
 
-<head>
-    <title>Overwatch</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../Css/Index.css">
-    <script src ="../Java_Script_Js/jogoNovo.js"></script>
-    <script src ="../Java_Script_Js/AdicionarAoCarrinho.js"></script>
-</head>
+    <body>
+        <header class="menu-principal">
+            <main>
+                <div class="header-1">
+                    <div class="logo">
+                        <img src="../Imagens/Logo.png" alt="" width="120px" height="70px">
+                    </div>
+                    <div class="redes-sociais">
+                        <ul>
+                            <!--Conecta com o Instagram-->
+                            <a href="https://www.instagram.com/">
+                                <li>
+                                    <img class="Instagram" src="../Imagens/Instagram.png" alt="Instagram">
+                                </li>
+                            </a>
+                            <!--Conecta com o Facebook-->
+                            <a href="https://www.facebook.com/versaonerd/">
+                                <li>
+                                    <img class="Social" src="../Imagens/Facebook.png" alt="Facebook">
+                                </li>
+                            </a>
+                            <!--Conecta com o Youtube-->
+                            <a href="https://www.youtube.com/channel/UCY1Ysw32voqz6CSIQWkSPCg">    
+                                <li>
+                                    <img class="Social" src="../Imagens/Youtube.png" alt="Youtube">
+                                </li>
+                            </a>
+                            <!--Conecta com o linkedin-->
+                            <a href="https://www.linkedin.com/">    
+                                <li>
+                                    <img class="SocialLinkdin" src="../Imagens/Linkdin.png" alt="Linkedin">
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </header>
+        <!-- ========== Menu botoes e pesquisa==========-->
+        <main class="col-100 menu-urls">
+            <div class="header-2">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Games</a>
+                        </li>
+                        <li>
+                            <a href="#">Ofertas</a>
+                        </li>
+                    </ul>
+                    <div class="busca">
+                        <input type="text" placeholder="Buscar Games"/>
+                    </div>
+                    <a href="../Html/CarrinhoDeCompras.html">
+                        <img  class="carrinhodecompras"  src="../Imagens/Carrinho.png" alt="Carrinho">
+                    </a>
+                    <section>
+                        <a href="../Html/Login.html">
+                            <img class="usuario" src="../Imagens/user.jpg" alt="usuario">
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <!--==================MENU=================-->
+        <main>
 
-<body>
-
-
-    <img src="../Imagens/overbuy.jpg" alt="" />
-    <div id="preco"></div>
-
-    <script>
-        var preco = JSON.parse(localStorage.getItem(2)).valor
-        document.querySelector("#preco").innerHTML = preco
-        
-       
-        
-    
-    </script>
-
-    <input  placeholder=Quantidade... min= "0" type="number">
-    <button onclick="AdicionarAoCarrinho(localStorage.getItem(2))">addtoCart</button>
-
-
-
-
-</body>
-
+        </main>
+    </body>
 </html>
