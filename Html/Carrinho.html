@@ -10,8 +10,8 @@
     <script src="../Java_Script_js/limparCarrinho.js"></script>
     <script src="../Java_Script_js/QuantidadeTotalDeJogosNoCarrinho.js"></script>
     <script src="../Java_Script_js/valorTotalDaCompra.js"></script>
+    <script src="../Java_Script_js/ListaDeCompras.js"></script>
 
-    
 </head>
 
 <body>
@@ -30,6 +30,11 @@
         console.log("quantidade", quantidadeTotalDeJogosNoCarrinho() )
         console.log( "valor da compra", valorTotalDaCompra())
         console.log(carrinho)
+
+
+        var array = listaDeCompras();
+        array[0].nome = "erro"
+        console.log( array );
 
     
       
