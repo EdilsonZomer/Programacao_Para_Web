@@ -5,8 +5,8 @@
     <title> </title>
     <meta charset="UTF-8">
     <script src="../Java_Script_js/AdicionarAoCarrinho.js"></script>
-    <script src="../Java_Script_js/removerDoCarrinho.js"></script>
-    
+    <script src="../Java_Script_js/RemoverDoCarrinho.js"></script>
+    <script src="../Java_Script_js/RemoverTodosDoCarrinho.js"></script>
 </head>
 
 <body>
@@ -22,12 +22,17 @@
         adicionarAoCarrinho("Dark Souls", 80, 1);
         adicionarAoCarrinho("over", 150, 1);
         adicionarAoCarrinho("over", 150, 1);
+        adicionarAoCarrinho("For Honor", 40, 1);
+        adicionarAoCarrinho("over", 150, 1);
+        adicionarAoCarrinho("over", 150, 1);
+       
+        console.log(carrinho.length)
         console.log(carrinho)
-        console.log(carrinho[1])
-        removerDoCarrinho("over");
-        removerDoCarrinho("over");
-        
-        console.log(carrinho)
+
+
+        removerTodosDoCarrinho("over");
+        console.log(carrinho.length)
+      
         
    
         
