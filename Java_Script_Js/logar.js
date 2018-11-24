@@ -1,19 +1,38 @@
-function logar(form) {
+function logar(evento) {
+    evento.stopPropagation();
+    evento.preventDefault();
 
-    form.nome.value = form.nome.value.toLowerCase()
-    form.senha.value = form.senha.value.toLowerCase()
+    var form = document.getElementsByTagName("form")[0];
+    var nome = form.nome.value;
+    var senha = form.senha.value;
 
+    var cadastrados = JSON.parse(localStorage.getItem("contas"))
+    var usuario = cadastrados.find(function(cadastro) {
+        return nome == cadastro.nome && senha == cadastro.senha;
+    });
 
+    if(usuario) {
+        alert("Usuario autenticado!");
+        window.location.href = "logado.html"
 
-    if (form.nome.value == (JSON.parse(localStorage.getItem(1)).nome),
-     form.senha.value  == (JSON.parse(localStorage.getItem(1)).senha)) {
+    } else {
+        alert("Usuario não encontrado");
+    }
+}
+
+/*for(i = 0; i < cadastrados.length; i++){
+        if(form.nome.value == cadastrados[i].nome && form.senha.value == cadastrados[i].senha){
+            alert("logado")
+            break
+        }
+        else{
+        alert("login incorreto")}*/      
+
+   /* if (form.nome.value == (JSON.parse(localStorage.getItem("contas", listaDeCadastros[0]))),
+     form.senha.value  == (JSON.parse(localStorage.getItem("contas", listaDeCadastros[0])))) {
 
         alert("LOGADO! \n Bem vindo " + form.nome.value);
     }
     else {
 
-        alert("Dados incorretos");
-
-
-    }
-}
+    alert("Dados incorretos");*/
