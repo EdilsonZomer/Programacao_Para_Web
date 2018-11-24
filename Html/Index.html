@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../Css/Index.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="../Css/Card.css">
     </head>
 
     <body>
@@ -17,12 +18,31 @@
                     </div>
                     <div class="redes-sociais">
                         <ul>
-                            <li><a href="#"><img class="Instagram" src="../Imagens/Instagram.png" alt="Instagram"></a></li>
-                            <li><a href="#"><img class="Social" src="../Imagens/Facebook.png" alt="Facebook"></a></li>
-                            <li><a href="#"><img class="Social" src="../Imagens/Youtube.png" alt="Youtube"></a></li>
-                            <li><a href="#"><img class="SocialLinkdin" src="../Imagens/Linkdin.png" alt="Linkedin"></a></li>
+                            <!--Conecta com o Instagram-->
+                            <a href="https://www.instagram.com/">
+                                <li>
+                                    <img class="Instagram" src="../Imagens/Instagram.png" alt="Instagram">
+                                </li>
+                            </a>
+                            <!--Conecta com o Facebook-->
+                            <a href="https://www.facebook.com/versaonerd/">
+                                <li>
+                                    <a href="#"><img class="Social" src="../Imagens/Facebook.png" alt="Facebook">
+                                </li>
+                            </a>
+                            <!--Conecta com o Youtube-->
+                            <a href="https://www.youtube.com/channel/UCY1Ysw32voqz6CSIQWkSPCg">    
+                                <li>
+                                    <a href="#"><img class="Social" src="../Imagens/Youtube.png" alt="Youtube">
+                                </li>
+                            </a>
+                            <!--Conecta com o linkedin-->
+                            <a href="https://www.linkedin.com/">    
+                                <li>
+                                    <a href="#"><img class="SocialLinkdin" src="../Imagens/Linkdin.png" alt="Linkedin">
+                                </li>
+                            </a>
                         </ul>
-        
                     </div>
                 </div>
             </main>
@@ -33,26 +53,19 @@
                 <div class="menu">
                     <ul>
                         <li>
-                            <a href="">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="">Games</a>
+                            <a href="#">Games</a>
                         </li>
                         <li>
-                            <a href="">Ofertas</a>
-                        </li>
-                        <li>
-                            <a href="CarrinhoDeCompras.html">Carrinho</a>
-                            
+                            <a href="#">Ofertas</a>
                         </li>
                     </ul>
-
-                <div class="busca">
-                    <input type="text" placeholder="Buscar Games" class="ju">
-                   
+                    <div class="busca">
+                        <input type="text" placeholder="Buscar Games"/>
+                    </div>
                 </div>
-
-               
             </div>
         </main>
         <div class="col-100">
@@ -64,19 +77,155 @@
                 <img class="img-principal"  src="../Imagens/HeartStone.png" alt=""/>
             </div>
         </div>
-
-        <main class="col-100 menu-urls">
-            <div>
-                <h2 class="lancamento" >Lançamentos</h2>
-                <a href="Overwatch.html">
-                <img src= "../Imagens/overbuy.jpg" alt=""/>
-                </a>
+         <!-- ========== Menu botoes e pesquisa==========-->
+         <div class=" Mais-Jogados ">
+            <ul>
+                <li>
+                    <a href="#">MAI JOGADOS</a>
+                </li>
+            </ul>
+        </div>      
+        <!--===================================PRIMEIRO CARD CRIADO ========================================================-->   
+        <div class="container">
+            <div class="card">
+                <div class="card-head">
+                    <img src="../Imagens/OverWatch-logo.jpg" alt="OverWatch-logo" class="card-logo">
+                    <img src="../Imagens/Soldado76.png" alt="Soldado76" class="product-img">
+                    <div class="product-detail">
+                        <h2>Overwatch</h2> 
+                            Em Overwatch, você controla um de vários heróis 
+                            em partidas competitivas de tiro em equipes de 6 
+                            pessoas. Lute por objetivos, 
+                            derrote a outra equipe e alcance a vitória.
+                    </div>
+                    <span class="back-text">
+                        FPS
+                    </span>
+                </div>
+                <div class="card-body">
+                    <div class="product-desc">
+                        <span class="product-title">
+                            <b>AVALIAÇÃO</b>
+                            <span class="avaliacao">
+                                9.0
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="product-properties">
+                    <span class="valor">
+                        <span><b>valor   </b></span>
+                        <span>$$150,00</span>
+                    </span>
+                </div>
+                <div class="product-properties">
+                    <span class="comprar">
+                        <span>Comprar</span>
+                    </span>
+                </div>
+                <div class="product-properties">
+                    <span class="addcarrinho">
+                        <span>Carrinho</span>
+                    </span>
+                </div>
             </div>
-        </main>
-
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="..\Java_Script_Js\Main.js"></script>
+            <!--===================================SEGUNDO CARD CRIADO ========================================================--> 
+            <div class="card">
+                <div class="card-head">
+                    <img src="../Imagens/RingOfElysium-logo.png" alt="RingOfElysium-logo" class="card-logo">
+                    <img src="../Imagens/RingOfElysium-Capa.png" alt="RingOfElysium-Capa" class="product-img">
+                    <div class="product-detail">
+                        <h2>Ring Of Elysium</h2> 
+                        Sessenta pessoas estão presas em uma montanha de neve,
+                        A saída é um voo de resgate que só pode salvar até quatro pessoas.
+                        Os sobreviventes devem eliminar os outros competidores, para 
+                        chegar na ultima area e subir no helicoptero.
+                        
+                    </div>
+                    <span class="descricao-ring">
+                        3º pessoa
+                    </span>
+                </div>
+                <div class="card-body">
+                    <div class="product-desc">
+                        <span class="product-title">
+                            <b>AVALIAÇÃO</b>
+                            <span class="avaliacao">
+                                9.7
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="product-properties">
+                    <span class="valor">
+                        <span><b>valor   </b></span>
+                        <span>$$0,00</span>
+                    </span>
+                </div>
+                <div class="product-properties">
+                    <span class="comprar">
+                        <span>Comprar</span>
+                    </span>
+                </div>
+                <div class="product-properties">
+                    <span class="addcarrinho">
+                        <span>Carrinho</span>
+                    </span>
+                </div>
+            </div>
+            <!--===================================TERCEIRO CARD CRIADO ========================================================--> 
+            <div class="card">
+                <div class="card-head">
+                    <img class="hst" src="../Imagens/HeartStone-logo.png" alt="heratStone-logo" class="card-logo">
+                    <img src="../Imagens/Jaina-Capa.png" alt="Jaina-Capa" class="product-img">
+                    <div class="product-detail">
+                        <h2>Hearthstone</h2> 
+                        Hearthstone , originalmente Hearthstone : Heroes of Warcraft, é um videogame
+                        de cartas colecionáveis ​​on-line gratuito desenvolvido e publicado 
+                        pela Blizzard Entertainment.
+                    </div>
+                    <span class="descricao-HeartStone">
+                        Jogo de Cartas
+                    </span>
+                </div>
+                <div class="card-body">
+                    <div class="product-desc">
+                        <span class="product-title">
+                            <b>AVALIAÇÃO</b>
+                            <span class="avaliacao">
+                                9.0
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="product-properties">
+                    <span class="valor">
+                        <span><b>valor   </b></span>
+                        <span>$$0,00</span>
+                    </span>
+                </div>
+                <div class="product-properties">
+                    <span class="comprar">
+                        <span>comprar</span>
+                    </span>
+                </div>
+                <div class="product-properties">
+                    <span class="addcarrinho">
+                        <span>Carrinho</span>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Lançamentos</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script type="text/javascript" src="..\Java_Script_Js\Main.js"></script>
     </body>
 </html>

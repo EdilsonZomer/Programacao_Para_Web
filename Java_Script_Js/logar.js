@@ -1,22 +1,38 @@
+function logar(evento) {
+    evento.stopPropagation();
+    evento.preventDefault();
 
-alert('ss')
-function logar(form) {
+    var form = document.getElementsByTagName("form")[0];
+    var nome = form.nome.value;
+    var senha = form.senha.value;
 
-    form.nome.value = form.nome.value.toLowerCase()
-    form.senha.value = form.senha.value.toLowerCase()
+    var cadastrados = JSON.parse(localStorage.getItem("contas"))
+    var usuario = cadastrados.find(function(cadastro) {
+        return nome == cadastro.nome && senha == cadastro.senha;
+    });
 
+    if(usuario) {
+        alert("Usuario autenticado!");
+        window.location.href = "logado.html"
 
+    } else {
+        alert("Usuario não encontrado");
+    }
+}
 
-    if (form.nome.value == (JSON.parse(localStorage.getItem(listaDeCadastros[0]))),
-     form.senha.value  == (JSON.parse(localStorage.getItem(listaDeCadastros[0])))) {
+/*for(i = 0; i < cadastrados.length; i++){
+        if(form.nome.value == cadastrados[i].nome && form.senha.value == cadastrados[i].senha){
+            alert("logado")
+            break
+        }
+        else{
+        alert("login incorreto")}*/      
+
+   /* if (form.nome.value == (JSON.parse(localStorage.getItem("contas", listaDeCadastros[0]))),
+     form.senha.value  == (JSON.parse(localStorage.getItem("contas", listaDeCadastros[0])))) {
 
         alert("LOGADO! \n Bem vindo " + form.nome.value);
     }
     else {
 
-        alert("Dados incorretos");
-
-
-    }
-
-}
+    alert("Dados incorretos");*/

@@ -1,10 +1,4 @@
-var carrinho = "carrinho"
-function AdicionarAoCarrinho(jogo){
-
-
-    let jogoAdicionado = JSON.stringify(jogo);
-
-    localStorage.setItem(carrinho, jogoAdicionado);
-
-
-}
+function AdicionarAoCarrinho(nome, preco, quantidade) {
+    var joguinho = new Jogo(nome, preco, quantidade)
+    carrinho.push(joguinho)
+    }
