@@ -142,17 +142,218 @@ input[name="grupo"]:checked + label img {
 .descricao-funcao ul li:hover ul {
     visibility: visible;
 }
-
-.descricao-funcao a:hover {
-    color: white;
-}
-
 .descricao-funcao ul ul li {
     float: none;
     border-bottom: solid 1px #ccc;
 }
 /*==========================================FUNÇÕES DAS CLASSES============================================*/
+/*==========================================COMPRAR============================================*/
+.watchtrailer button {
+    width: 159px;
+    height: 62px;
+    border-radius: 33px;
+    margin-left: 600px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    border: 2px solid black;
+
+}
 
 
+/*==========================================FIM COMPRAR============================================*/
+.funcoes img {
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+}
+.tanque {
+    float: left;
+    margin-top: 3px;
+    margin-left: 54;
+    margin-right: 703px;
+}
 
+.tanque {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
 
+.tanque h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*-----------------------------------------*/
+.dano {
+    float: left;
+    margin-top: 3px;
+    margin-left: 338px;
+    margin-right: 416px;
+}
+
+.dano {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.dano h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*-----------------------------------------*/
+.suporte {
+    float: left;
+    margin-top: 3px;
+    margin-left: 622px;
+    margin-right: 148px;
+}
+
+.suporte {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.suporte h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/*======================================FUNÇOES DAS CLASSES===================================*/
+/*
+/*
+/*======================================MAPAS===================================*/
+
+.mapas img {
+    display: inline flex;
+    width: 202px;
+    height: 167px;
+    margin: 8px;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+
+.mapas img:hover {
+    border: 2px solid red;
+    cursor: pointer;;
+}
+
+.imgtop {
+    margin-top: 20px!important;
+    width: 250px;
+    height: 150px;
+
+}
+
+.mapas ul{
+    margin-top: 290px;
+    list-style: none;
+    position: relative;
+}
+
+.mapas a {
+    font-size: 74px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase
+}
+
+.mapas ul ul {
+    visibility: hidden;
+}
+
+.mapas ul li:hover ul {
+    visibility: visible;
+}
+
+.mapas a:hover {
+    color: #409180;
+}
+
+.mapas ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+.fiqueconectado ul{
+    margin-top: 60px;
+    list-style: none;
+    position: relative;
+}
+
+.fiqueconectado a {
+    font-size: 34px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase
+}
+
+.fiqueconectado ul ul {
+    visibility: hidden;
+}
+
+.fiqueconectado ul li:hover ul {
+    visibility: visible;
+}
+
+.fiqueconectado a:hover {
+    color: #409180;
+}
+
+.fiqueconectado ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+.menor {
+    position: absolute;
+    background: #bbd71d;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-left: 698px;
+    box-shadow: -10px 20px 15px -10px #353535 (17, 233, 91, 0.3);
+    margin-bottom: 40px;
+}
+.informacao h2{
+    font-size: 15px;
+    margin-top: 115px;
+    margin-left: 442px;
+    margin-right: 410px;
+}
+.socialfacebook img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 683px;
+    margin-top: -135px;
+}
+.socialyoutube img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 759px;
+    margin-top: -135px;
+}
