@@ -9,7 +9,9 @@
     <script src="../Java_Script_js/RemoverTodosDoCarrinho.js"></script>
     <script src="../Java_Script_js/limparCarrinho.js"></script>
     <script src="../Java_Script_js/QuantidadeTotalDeJogosNoCarrinho.js"></script>
+    <script src="../Java_Script_js/valorTotalDaCompra.js"></script>
 
+    
 </head>
 
 <body>
@@ -24,23 +26,12 @@
 
         adicionarAoCarrinho("Dark Souls", 80, 1);
         adicionarAoCarrinho("over", 150, 1);
-        adicionarAoCarrinho("over", 150, 1);
-        adicionarAoCarrinho("For Honor", 40, 6);
-        adicionarAoCarrinho("over", 150, 1);
-        adicionarAoCarrinho("over", 150, 1);
-        console.log(quantidadeTotalDeJogosNoCarrinho() )
-       
-        console.log(carrinho.length)
+    
+        console.log("quantidade", quantidadeTotalDeJogosNoCarrinho() )
+        console.log( "valor da compra", valorTotalDaCompra())
         console.log(carrinho)
 
-
-        removerTodosDoCarrinho("over");
-        console.log(carrinho.length)
-
-        limparCarrinho();
-        console.log(carrinho)
-
-        console.log(quantidadeTotalDeJogosNoCarrinho() )
+    
       
         
    
