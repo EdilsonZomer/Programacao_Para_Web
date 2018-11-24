@@ -6,4 +6,5 @@ function removerTodosDoCarrinho(nome) {
             }
 
         }
+    salvarCarrinho()
     }
