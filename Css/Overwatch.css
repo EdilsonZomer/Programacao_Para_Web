@@ -1,22 +1,158 @@
-.main-principal{
-    display: inline-flex;
+.slidershow {
+    width: 800px;
+    height: auto;
+    margin: 20px;
+    margin-top: 100px;
 }
 
-.capaoverwatch {
-    width: 250px;
-    height: 250px;
+.slidershowPrincipal {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
 }
-.tramaOver {
-    font-size: 14px;
+
+.slidershowslide {
+    display: flex;
+    width: 1000%;
+    transition: all .50s;
+}
+
+label img {
+    width: 78px;
+    cursor: pointer;
+    float: left;
+    opacity: 0.10;
+    transition: all .4s;
+    border: 1px solid white;
+}
+
+#foto2:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -100%;
+}
+
+#foto3:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -200%;
+}
+
+#foto4:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -300%;
+}
+
+#foto5:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -400%;
+}
+
+#foto6:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -500%;
+}
+
+#foto7:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -600%;
+}
+
+#foto8:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -700%;
+}
+
+#foto9:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -800%;
+}
+
+#foto10:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -900%;
+}
+
+input[name="grupo"] {
+    display: none;
+}
+input[name="grupo"]:checked + label img {
+    opacity: .9;
+}
+
+/*==============================SLIDER SHOW CRIADO======================================================*/
+.trama-overwatch {
+    float: left;
+    margin-top: -555px;
+    margin-left: 815px;
+    margin-right: 20px;
+}
+
+.trama-overwatch {
+    padding: 0 20px;
+    font-size: 22px;
     color: #fff;
-    margin: 30px;
+    position: absolute;
 }
 
-.tramaOver h2 {
-    font-size: 31px;
+.trama-overwatch h2 {
+    font-size: 55px;
     font-weight: 500;
     letter-spacing: 2px;
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-    
+
+.lute-conosco {
+    float: left;
+    margin-top: -460px;
+    margin-left: 815px;
+    margin-right: 20px;
+}
+
+.lute-conosco {
+    padding: 0 20px;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+}
+
+.lute-conosco h2 {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*=============================TRAMA DE OVERWATCH========================================*/
+.descricao-funcao ul{
+    list-style: none;
+    position: relative;
+}
+
+.descricao-funcao ul li {
+    float: left;
+    width: 100%;
+    background: #409180;
+}
+
+.descricao-funcao a {
+    font-size: 24px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase
+}
+
+.descricao-funcao ul ul {
+    visibility: hidden;
+}
+
+.descricao-funcao ul li:hover ul {
+    visibility: visible;
+}
+
+.descricao-funcao a:hover {
+    color: white;
+}
+
+.descricao-funcao ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+/*==========================================FUNÇÕES DAS CLASSES============================================*/
+
+
+
+
