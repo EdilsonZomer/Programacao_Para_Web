@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="../Css/Index.css">
         <link rel="stylesheet" href="../Css/Card.css">
         <link rel="stylesheet" href="../Css/Overwatch.css">
-        <link rel="stylesheet" href="../Css/login.css">
+        <link rel="stylesheet" href="../Css/cadastro.css">
     </head>
 
     <body>
@@ -78,25 +78,29 @@
         </main>
         <!--==================MENU=================-->
 
-        <div class="login">
-                <h2 for="email">Email</h2>
-                <input type="text" placeholder=" Email   " name="email">
-            </div>
-            <div class="senha">
+        <div class="cadastrar">
+            <h2 for="email">Email</h2>
+            <input type="text" placeholder=" Email   " name="email">
+        </div>
+        <div class="senha">
                 <label for="senha">Senha</label>
-                <input type="password" placeholder=" Senha   " name="senha">
-            </div>
-            <div class="remember">
-                <label for=ofertas>lembrar</label>
-                <input type="radio" name="ofertas">
-            </div>
-            <div class="esqueci">
-                <label for=termos>esqueci minha senha</label>
-                <input type="radio" name="termos">
-            </div>
-            <div class="botaologar">
-                <button>Logar</button>
-            </div>
+            <input type="password" placeholder=" Senha   " name="senha">
+        </div>
+        <div class="confirmarsenha">
+                <label for=ConfirmacaoSenha>Confirmação Senha</label>
+            <input type="password" placeholder=" Senha   " name="ConfirmacaoSenha">
+        </div>
+        <div class="inf">
+                <label for=ofertas>receber ofertas por email</label>
+            <input type="radio" name="ofertas">
+        </div>
+        <div class="termos">
+                <label for=termos>termos</label>
+            <input type="radio" name="termos">
+        </div>
+        <div class="botaologar">
+            <button>CRIAR</button>
+        </div>
 
         <div class=" fiqueconectado">
                 <ul>
@@ -124,14 +128,6 @@
                     <img src="../Imagens/Social/Youtube.png" alt="youtube">
                 </a>
             </div>
-
-
-
-
-
-
-
-
-        <script src="../Java_Script_js/loja.js" async></script>
+            <script src ="../Java_Script_Js/cadastrar.js"></script>
     </body>
 </html>

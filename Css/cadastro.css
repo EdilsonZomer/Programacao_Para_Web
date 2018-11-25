@@ -1,13 +1,13 @@
-.login input {
+.cadastrar input {
     margin-left: 597px;
     border-radius: 33;
     border-radius: 10px;
     width: 275px;
     height: 40px;
 }
-.login h2 {
+.cadastrar h2 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     margin-top: 130px;
     margin-left: 597px;
@@ -25,9 +25,28 @@
 .senha label {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 21px;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     margin-left: 597px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.confirmarsenha input {
+    margin-left: 597px;
+    margin-top: 40px;
+    border-radius: 33;
+    border-radius: 10px;
+    width: 275px;
+    height: 40px;
+    position: absolute;
+}
+.confirmarsenha label {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 19px;
+    font-size: 17px;
+    color: white;
+    margin-left: 599px;
     text-transform: uppercase;
     position: absolute;
 }
@@ -42,22 +61,22 @@
 
 .botaologar button {
     margin-left: 663px;
-    margin-top: 80px;
+    margin-top: 151px;
     border-radius: 33px;
     width: 121px;
     height: 47px;
 }
-
-.remember input {
+/*-----------------------------------------------------*/
+.inf input {
     width: 16px;
     height: 16px;
     margin-left: 600px;
-    margin-top: 9px;
+    margin-top: 88px;
     position: absolute
 }
 
-.remember label {
-    margin-top: 9px;
+.inf label {
+    margin-top: 88px;
     font-size: 14px;
     color: white;
     margin-left: 636px;
@@ -65,16 +84,16 @@
     position: absolute;
 }
 
-.esqueci input {
+.termos input {
     width: 16px;
     height: 16px;
     margin-left: 600px;
-    margin-top: 35px;
+    margin-top: 114px;
     position: absolute;
 }
 
-.esqueci label {
-    margin-top: 35px;
+.termos label {
+    margin-top: 114px;
     font-size: 14px;
     color: white;
     margin-left: 636px;

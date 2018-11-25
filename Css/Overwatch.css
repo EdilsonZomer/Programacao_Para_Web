@@ -338,6 +338,7 @@ input[name="grupo"]:checked + label img {
     margin-bottom: 40px;
 }
 .informacao h2{
+    color: white;
     font-size: 15px;
     margin-top: 115px;
     margin-left: 442px;
