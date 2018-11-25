@@ -4,19 +4,84 @@
 <head>
     <title> </title>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
     <script src="../Java_Script_js/AdicionarAoCarrinho.js"></script>
     <script src="../Java_Script_js/RemoverDoCarrinho.js"></script>
     <script src="../Java_Script_js/RemoverTodosDoCarrinho.js"></script>
-    <script src="../Java_Script_js/limparCarrinho.js"></script>
+    <script src="../Java_Script_js/LimparCarrinho.js"></script>
     <script src="../Java_Script_js/QuantidadeTotalDeJogosNoCarrinho.js"></script>
     <script src="../Java_Script_js/valorTotalDaCompra.js"></script>
     <script src="../Java_Script_js/ListaDeCompras.js"></script>
+    <script src="../Java_Script_js/SalvarCarrinho.js"></script>
+    <script src="../Java_Script_js/CarregarCarrinho.js"></script>
 
 </head>
 
 <body>
     <h1>Carrinho de compras</h1>
+
+    <div>
+        <ul>
+            <li><a class="adicionar-ao-carrinho" href="#" data-nome="Dark Souls" data-preco="80.00">Dark Souls 80,00</a></li>
+            <li><a class="adicionar-ao-carrinho" href="#" data-nome="Overwatch" data-preco="150.00">Overwatch 150,00</a></li>
+        </ul>
+        <button id="limpar-carrinho">Limpar Carrinho</button>
+    </div>
+
+    <div>
+        <ul id="mostrar-carrinho"></ul>
+        <li>????????????????</li>
+        </ul>
+        <div> Total da Compra: R$ <span id="Total-da-Compra"></span></div>
+    </div>
+
+
     <script>
+        
+
+        
+        $(".adicionar-ao-carrinho").click(function(event){
+            event.preventDefault();
+            var nome = $(this).attr("data-nome");  /* this representa o link que eu cliquei -  attr deixa acessar um dos atributos */ 
+            var preco = Number($(this).attr("data-preco"));
+
+            adicionarAoCarrinho(nome, preco, 1);
+            telaDoCarrinho();
+            
+        });
+
+        $("#limpar-carrinho").click(function(event){
+            limparCarrinho();
+            telaDoCarrinho();
+            
+        });
+
+        function telaDoCarrinho(){
+            console.log("*** Quantidade no Carrinho ***")
+            var comprasNoCarrinho = listaDeCompras()
+            var saida = "";
+
+            for (var i in comprasNoCarrinho){
+                saida += "<li>"+comprasNoCarrinho[i].nome +" "
+                    + comprasNoCarrinho[i].quantidade + " x "
+                    + comprasNoCarrinho[i].preco + " = " 
+                    + comprasNoCarrinho[i].total
+                    + " <button class='deletar-jogo' data-nome='"+comprasNoCarrinho[i].nome+"'>x</button>"+"</li>"; /*tirar mais tarde*/
+                    
+            }
+
+            $("#mostrar-carrinho").html(saida);
+            $("#Total-da-Compra").html( valorTotalDaCompra() );
+        }
+
+        $("#mostrar-carrinho").on("click",".deletar-jogo", function(event){
+            var nome = $(this).attr("data-nome");
+            removerTodosDoCarrinho(nome);
+            telaDoCarrinho()
+        });
+
         var carrinho = [];
         var Jogo = function (nome, preco, quantidade) {
             this.nome = nome
@@ -24,27 +89,16 @@
             this.quantidade = quantidade
         };
 
-        adicionarAoCarrinho("Dark Souls", 80, 1);
-        adicionarAoCarrinho("over", 150, 1);
-    
-        console.log("quantidade", quantidadeTotalDeJogosNoCarrinho() )
-        console.log( "valor da compra", valorTotalDaCompra())
+        adicionarAoCarrinho("Dark Souls", 80.00, 1); 
+        adicionarAoCarrinho("Overwatch", 150.00, 1); 
+        carregarCarrinho();
+        telaDoCarrinho();
+
+        console.log("quantidade", quantidadeTotalDeJogosNoCarrinho())
+        console.log("valor da compra", valorTotalDaCompra())
         console.log(carrinho)
-
-
-        var array = listaDeCompras();
-        array[0].nome = "erro"
-        console.log( array );
-
-    
-      
-        
-   
-        
-
-
-
     </script>
+
 
 </body>
 
