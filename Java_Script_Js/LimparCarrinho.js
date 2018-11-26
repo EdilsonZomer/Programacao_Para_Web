@@ -1,4 +1,0 @@
-function limparCarrinho(){
-    carrinho = []
-    salvarCarrinho()
-}

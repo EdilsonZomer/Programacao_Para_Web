@@ -7,16 +7,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
-    <script src="../Java_Script_js/AdicionarAoCarrinho.js"></script>
-    <script src="../Java_Script_js/RemoverDoCarrinho.js"></script>
-    <script src="../Java_Script_js/RemoverTodosDoCarrinho.js"></script>
-    <script src="../Java_Script_js/LimparCarrinho.js"></script>
-    <script src="../Java_Script_js/QuantidadeTotalDeJogosNoCarrinho.js"></script>
-    <script src="../Java_Script_js/valorTotalDaCompra.js"></script>
-    <script src="../Java_Script_js/ListaDeCompras.js"></script>
-    <script src="../Java_Script_js/SalvarCarrinho.js"></script>
-    <script src="../Java_Script_js/CarregarCarrinho.js"></script>
-
 </head>
 
 <body>
@@ -33,70 +23,175 @@
     <div>
         <ul id="mostrar-carrinho"></ul>
         <li>????????????????</li>
-        </ul>
+    </ul>
         <div> Total da Compra: R$ <span id="Total-da-Compra"></span></div>
     </div>
 
 
     <script>
-        
 
-        
-        $(".adicionar-ao-carrinho").click(function(event){
+
+        $(".adicionar-ao-carrinho").click(function (event) {
             event.preventDefault();
-            var nome = $(this).attr("data-nome");  /* this representa o link que eu cliquei -  attr deixa acessar um dos atributos */ 
+            var nome = $(this).attr("data-nome");  /* this representa o link que eu cliquei -  attr deixa acessar um dos atributos */
             var preco = Number($(this).attr("data-preco"));
 
-            adicionarAoCarrinho(nome, preco, 1);
+            carrinhoDeCompras.adicionarAoCarrinho(nome, preco, 1);
             telaDoCarrinho();
-            
+
         });
 
-        $("#limpar-carrinho").click(function(event){
-            limparCarrinho();
+        $("#limpar-carrinho").click(function (event) {
+            carrinhoDeCompras.limparCarrinho();
             telaDoCarrinho();
-            
+
         });
 
-        function telaDoCarrinho(){
+        function telaDoCarrinho() {
             console.log("*** Quantidade no Carrinho ***")
-            var comprasNoCarrinho = listaDeCompras()
+            var comprasNoCarrinho = carrinhoDeCompras.listaDeCompras()
             var saida = "";
 
-            for (var i in comprasNoCarrinho){
-                saida += "<li>"+comprasNoCarrinho[i].nome +" "
+            for (var i in comprasNoCarrinho) {
+                saida += "<li>" + comprasNoCarrinho[i].nome + " "
                     + comprasNoCarrinho[i].quantidade + " x "
-                    + comprasNoCarrinho[i].preco + " = " 
-                    + comprasNoCarrinho[i].total
-                    + " <button class='deletar-jogo' data-nome='"+comprasNoCarrinho[i].nome+"'>x</button>"+"</li>"; /*tirar mais tarde*/
-                    
+                    + comprasNoCarrinho[i].preco + " = "
+                    + comprasNoCarrinho[i].total.toFixed(2)
+                    + " <button class='adicionar-jogo' data-nome='" + comprasNoCarrinho[i].nome + "'>+1</button>"
+                    + " <button class='subtrair-jogo' data-nome='" + comprasNoCarrinho[i].nome + "'>-1</button>"
+                    + " <button class='deletar-jogo' data-nome='" + comprasNoCarrinho[i].nome + "'>x</button>" + "</li>"; /*tirar mais tarde*/
+
             }
 
             $("#mostrar-carrinho").html(saida);
-            $("#Total-da-Compra").html( valorTotalDaCompra() );
+            $("#Total-da-Compra").html(carrinhoDeCompras.valorTotalDaCompra());
         }
 
-        $("#mostrar-carrinho").on("click",".deletar-jogo", function(event){
+        $("#mostrar-carrinho").on("click", ".deletar-jogo", function (event) {
             var nome = $(this).attr("data-nome");
-            removerTodosDoCarrinho(nome);
+            carrinhoDeCompras.removerTodosDoCarrinho(nome);
             telaDoCarrinho()
         });
 
-        var carrinho = [];
-        var Jogo = function (nome, preco, quantidade) {
+        $("#mostrar-carrinho").on("click", ".subtrair-jogo", function (event) {
+            var nome = $(this).attr("data-nome");
+            carrinhoDeCompras.removerDoCarrinho(nome);
+            telaDoCarrinho()
+
+        });
+
+        $("#mostrar-carrinho").on("click", ".adicionar-jogo", function (event) {
+            var nome = $(this).attr("data-nome");
+            carrinhoDeCompras.adicionarAoCarrinho(nome, 0, 1);
+            telaDoCarrinho()
+        });
+
+
+        var carrinhoDeCompras = {};
+        carrinhoDeCompras.carrinho = [];
+        carrinhoDeCompras.Jogo = function (nome, preco, quantidade) {
             this.nome = nome
             this.preco = preco
             this.quantidade = quantidade
         };
 
-        adicionarAoCarrinho("Dark Souls", 80.00, 1); 
-        adicionarAoCarrinho("Overwatch", 150.00, 1); 
-        carregarCarrinho();
+        carrinhoDeCompras.adicionarAoCarrinho = function (nome, preco, quantidade) {
+            for (var i in this.carrinho) {
+                if (this.carrinho[i].nome === nome) {
+                    this.carrinho[i].quantidade += quantidade;
+                    this.salvarCarrinho()
+                    return;
+                }
+            }
+
+            var joguinho = new this.Jogo(nome, preco, quantidade)
+            this.carrinho.push(joguinho)
+            this.salvarCarrinho()
+        }
+        /*-----------------------------------------------------------------------------------------------*/
+
+        carrinhoDeCompras.removerDoCarrinho = function (nome) {
+            for (var i in this.carrinho) {
+                if (this.carrinho[i].nome === nome) {
+                    this.carrinho[i].quantidade--;
+                    if (this.carrinho[i].quantidade === 0) {
+                        this.carrinho.splice(i, 1);
+
+                    }
+                    break;
+                }
+            }
+            this.salvarCarrinho()
+        }
+
+        /*-----------------------------------------------------------------------------------------------*/
+
+        carrinhoDeCompras.removerTodosDoCarrinho = function (nome) {
+            for (var i in this.carrinho) {
+                if (this.carrinho[i].nome === nome) {
+                    this.carrinho.splice(i, 1);
+                    break;
+                }
+            }
+            this.salvarCarrinho()
+        }
+
+        /*-----------------------------------------------------------------------------------------------*/
+        carrinhoDeCompras.limparCarrinho = function () {
+            this.carrinho = []
+            this.salvarCarrinho()
+        }
+        /*-----------------------------------------------------------------------------------------------*/
+        carrinhoDeCompras.quantidadeTotalDeJogosNoCarrinho = function () {
+            var quantidadeTotal = 0;
+            for (var i in carrinho) {
+                quantidadeTotal += this.carrinho[i].quantidade;
+            }
+            return quantidadeTotal;
+        }
+        /*-----------------------------------------------------------------------------------------------*/
+
+        carrinhoDeCompras.valorTotalDaCompra = function () {
+            var totalDaCompra = 0;
+            for (var i in this.carrinho) {
+                totalDaCompra += this.carrinho[i].preco * this.carrinho[i].quantidade;
+            }
+            return totalDaCompra.toFixed(2); /*limitar para dois numeros depois do ponto*/
+        }
+        /*-----------------------------------------------------------------------------------------------*/
+        carrinhoDeCompras.listaDeCompras = function () {
+            var copiaDoCarrinho = [];
+            for (var i in this.carrinho) {
+                var jogo = this.carrinho[i];
+                var copiaDoJogo = {};
+                for (var p in jogo) {
+                    copiaDoJogo[p] = jogo[p];
+                }
+                copiaDoJogo.total = jogo.preco * jogo.quantidade;
+                copiaDoCarrinho.push(copiaDoJogo);
+            }
+            return copiaDoCarrinho;
+        }
+        /*-----------------------------------------------------------------------------------------------*/
+        carrinhoDeCompras.salvarCarrinho = function salvarCarrinho() {
+            localStorage.setItem("compras", JSON.stringify(this.carrinho));
+
+        }
+        /*-----------------------------------------------------------------------------------------------*/
+        carrinhoDeCompras.carregarCarrinho = function () {
+            this.carrinho = JSON.parse(localStorage.getItem("compras"));
+
+        }
+
+        /*-----------------------------------------------------------------------------------------------*/
+
+
+        /*adicionarAoCarrinho("Dark Souls", 80.00, 1);
+        adicionarAoCarrinho("Overwatch", 150.00, 1);*/
+        carrinhoDeCompras.carregarCarrinho();
         telaDoCarrinho();
 
-        console.log("quantidade", quantidadeTotalDeJogosNoCarrinho())
-        console.log("valor da compra", valorTotalDaCompra())
-        console.log(carrinho)
+    
     </script>
 
 
