@@ -149,15 +149,38 @@ input[name="grupo"]:checked + label img {
 /*==========================================FUNÇÕES DAS CLASSES============================================*/
 /*==========================================COMPRAR============================================*/
 .watchtrailer button {
-    width: 159px;
-    height: 62px;
+    width: 159;
+    height: 42px;
     border-radius: 33px;
-    margin-left: 600px;
-    margin-bottom: 40px;
-    margin-top: 15px;
+    margin-left: 341px;
+    margin-bottom: 152px;
+    margin-top: -72px;
     border: 2px solid black;
-
+    text-transform: capitalize;
+    font-size: 15.5px;
 }
+
+.watchtrailer button:hover {
+    border:2px solid red;
+    cursor: pointer;
+}
+
+.adicionarcarrinho button {
+    width: 181px;
+    height: 70px;
+    border-radius: 33px;
+    margin-left: 863px;
+    margin-bottom: 61px;
+    margin-top: -118px;
+    border: 2px solid black;
+    text-transform: capitalize;
+    font-size: 15.5px;
+}
+.adicionarcarrinho button:hover {
+    border:2px solid red;
+    cursor: pointer;
+}
+
 
 
 /*==========================================FIM COMPRAR============================================*/
@@ -214,7 +237,7 @@ input[name="grupo"]:checked + label img {
     float: left;
     margin-top: 3px;
     margin-left: 622px;
-    margin-right: 148px;
+    margin-right: 119px;
 }
 
 .suporte {
@@ -230,6 +253,7 @@ input[name="grupo"]:checked + label img {
     letter-spacing: 2px;
     padding-bottom: 10px;
     text-transform: uppercase;
+    text-align: inherit;
 }
 
 /*======================================FUNÇOES DAS CLASSES===================================*/
@@ -238,10 +262,9 @@ input[name="grupo"]:checked + label img {
 /*======================================MAPAS===================================*/
 
 .mapas img {
-    display: inline flex;
-    width: 202px;
-    height: 167px;
-    margin: 8px;
+    width: 232px;
+    height: 192px;
+    margin: 3px;
     border: 2px solid white;
     border-radius: 16px;
 }
@@ -265,6 +288,7 @@ input[name="grupo"]:checked + label img {
 }
 
 .mapas a {
+    margin-top: 365px;
     font-size: 74px;
     padding: 15px;
     display: block;
@@ -301,7 +325,8 @@ input[name="grupo"]:checked + label img {
     padding: 15px;
     display: block;
     text-decoration: none;
-    text-align: center;
+    margin-top: -65px;
+    margin-left: 466px;
     color: white;
     text-transform: uppercase
 }
@@ -332,29 +357,28 @@ input[name="grupo"]:checked + label img {
     font-weight: 200;
     color: #fff;
     border-radius: 7px;
-    margin-top: 50px;
-    margin-left: 698px;
-    box-shadow: -10px 20px 15px -10px #353535 (17, 233, 91, 0.3);
+    margin-top: 23px;
+    margin-left: 684px;
     margin-bottom: 40px;
 }
 .informacao h2{
     color: white;
     font-size: 15px;
     margin-top: 115px;
-    margin-left: 442px;
+    margin-left: 464px;
     margin-right: 410px;
 }
 .socialfacebook img{
     position: absolute;
     width: 50px;
     height: 50px;
-    margin-left: 683px;
+    margin-left: 730px;
     margin-top: -135px;
 }
 .socialyoutube img{
     position: absolute;
     width: 50px;
     height: 50px;
-    margin-left: 759px;
+    margin-left: 667px;
     margin-top: -135px;
 }
