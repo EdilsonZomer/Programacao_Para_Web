@@ -91,3 +91,31 @@
     margin-left: 559px;
     margin-bottom: 200px;
 }
+/*===========================================USUARIO LOGADO===============================================*/
+.logado h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+
+.logado span {
+    margin-top: 100px;
+    font-size: 19px;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 407px;
+    font-family: 'Times New Roman';
+}
+
+.sair button{
+    width: 120px;
+    border-radius: 33px;
+    height: 50px;
+    margin-left: 662px;
+    margin-top: 36px;
+    margin-bottom: 51px;
+}
