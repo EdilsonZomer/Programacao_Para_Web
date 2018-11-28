@@ -1,0 +1,379 @@
+.slidershow {
+    width: 800px;
+    height: 500;
+    margin: 20px;
+    margin-top: 100px;
+}
+
+.slidershowPrincipal {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slidershowslide {
+    display: flex;
+    width: 1000%;
+    transition: all .50s;
+}
+
+label img {
+    width: 78px;
+    cursor: pointer;
+    float: left;
+    opacity: 0.10;
+    transition: all .4s;
+    border: 1px solid white;
+}
+
+#foto2:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -100%;
+}
+
+#foto3:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -200%;
+}
+
+#foto4:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -300%;
+}
+
+#foto5:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -400%;
+}
+
+#foto6:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -500%;
+}
+
+#foto7:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -600%;
+}
+
+#foto8:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -700%;
+}
+
+#foto9:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -800%;
+}
+
+#foto10:checked ~ .slidershowPrincipal .slidershowslide {
+    margin-left: -900%;
+}
+
+input[name="grupo"] {
+    display: none;
+}
+input[name="grupo"]:checked + label img {
+    opacity: .9;
+}
+
+/*==============================SLIDER SHOW CRIADO======================================================*/
+.trama-overwatch {
+    float: left;
+    margin-top: -555px;
+    margin-left: 815px;
+    margin-right: 20px;
+}
+
+.trama-overwatch {
+    padding: 0 20px;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+}
+
+.trama-overwatch h2 {
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.lute-conosco {
+    float: left;
+    margin-top: -460px;
+    margin-left: 815px;
+    margin-right: 20px;
+}
+
+.lute-conosco {
+    padding: 0 20px;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+}
+
+.lute-conosco h2 {
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*=============================TRAMA DE OVERWATCH========================================*/
+.descricao-funcao ul{
+    list-style: none;
+    position: relative;
+}
+
+.descricao-funcao ul li {
+    float: left;
+    width: 100%;
+    background: #409180;
+}
+
+.descricao-funcao a {
+    font-size: 24px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase
+}
+
+.descricao-funcao ul ul {
+    visibility: hidden;
+}
+
+.descricao-funcao ul li:hover ul {
+    visibility: visible;
+}
+.descricao-funcao ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+/*==========================================FUNÇÕES DAS CLASSES============================================*/
+/*==========================================COMPRAR============================================*/
+.watchtrailer button {
+    width: 159;
+    height: 42px;
+    border-radius: 33px;
+    margin-left: 341px;
+    margin-bottom: 152px;
+    margin-top: -72px;
+    border: 2px solid black;
+    text-transform: capitalize;
+    font-size: 15.5px;
+}
+
+.watchtrailer button:hover {
+    border:2px solid red;
+    cursor: pointer;
+}
+
+.adicionarcarrinho button {
+    width: 181px;
+    height: 70px;
+    border-radius: 33px;
+    margin-left: 863px;
+    margin-bottom: 61px;
+    margin-top: -118px;
+    border: 2px solid black;
+    text-transform: capitalize;
+    font-size: 15.5px;
+}
+.adicionarcarrinho button:hover {
+    border:2px solid red;
+    cursor: pointer;
+}
+
+
+
+/*==========================================FIM COMPRAR============================================*/
+.funcoes img {
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+}
+.tanque {
+    float: left;
+    margin-top: 3px;
+    margin-left: 54;
+    margin-right: 703px;
+}
+
+.tanque {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.tanque h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*-----------------------------------------*/
+.dano {
+    float: left;
+    margin-top: 3px;
+    margin-left: 338px;
+    margin-right: 416px;
+}
+
+.dano {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.dano h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*-----------------------------------------*/
+.suporte {
+    float: left;
+    margin-top: 3px;
+    margin-left: 622px;
+    margin-right: 119px;
+}
+
+.suporte {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.suporte h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: inherit;
+}
+
+/*======================================FUNÇOES DAS CLASSES===================================*/
+/*
+/*
+/*======================================MAPAS===================================*/
+
+.mapas img {
+    width: 232px;
+    height: 192px;
+    margin: 3px;
+    border: 2px solid white;
+    border-radius: 16px;
+}
+
+.mapas img:hover {
+    border: 2px solid red;
+    cursor: pointer;;
+}
+
+.imgtop {
+    margin-top: 20px!important;
+    width: 250px;
+    height: 150px;
+
+}
+
+.mapas ul{
+    margin-top: 290px;
+    list-style: none;
+    position: relative;
+}
+
+.mapas a {
+    margin-top: 365px;
+    font-size: 74px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase
+}
+
+.mapas ul ul {
+    visibility: hidden;
+}
+
+.mapas ul li:hover ul {
+    visibility: visible;
+}
+
+.mapas a:hover {
+    color: #409180;
+}
+
+.mapas ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+.fiqueconectado ul{
+    margin-top: 60px;
+    list-style: none;
+    position: relative;
+}
+
+.fiqueconectado a {
+    font-size: 34px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    margin-top: -65px;
+    margin-left: 466px;
+    color: white;
+    text-transform: uppercase
+}
+
+.fiqueconectado ul ul {
+    visibility: hidden;
+}
+
+.fiqueconectado ul li:hover ul {
+    visibility: visible;
+}
+.fiqueconectado ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+.menor {
+    position: absolute;
+    background: #bbd71d;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: 23px;
+    margin-left: 684px;
+    margin-bottom: 40px;
+}
+.informacao h2{
+    color: white;
+    font-size: 15px;
+    margin-top: 115px;
+    margin-left: 464px;
+    margin-right: 410px;
+}
+.socialfacebook img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 730px;
+    margin-top: -135px;
+}
+.socialyoutube img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 667px;
+    margin-top: -135px;
+}
