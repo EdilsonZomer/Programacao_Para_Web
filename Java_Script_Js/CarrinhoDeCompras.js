@@ -1,6 +1,8 @@
+
 var carrinhoDeCompras = (function () {
 
     var carrinho = [];
+   
 
     function Jogo(nome, preco, quantidade){
         this.nome = nome
@@ -98,7 +100,9 @@ var carrinhoDeCompras = (function () {
         }
         return copiaDoCarrinho;
     };
-
-
+       
+    
     return obj;
+    
 })();
+
