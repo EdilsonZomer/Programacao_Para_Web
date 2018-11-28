@@ -1,0 +1,32 @@
+.titulocarrinho h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 105px;
+}
+.jogosadicionado {
+    opacity: 0.3;
+    width:auto;
+    height: 500;
+    background: white;
+}
+.jogosadicionado ul{
+    list-style: none;
+    position: relative;
+}
+
+.jogosadicionado ul li {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: 100px;
+}
+
+.jogosadicionado ul li a {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
