@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro</title>
+    <meta charset="UTF-8">
+    <script src="../Java_Script_Js/cadastrar.js"></script>
+
+    <style>
+        body {
+            background-color:rgb(31, 30, 30);
+            text-align: center;
+            color: aliceblue;
+        }
+    </style>
+</head>
+    <body>
+        <h1>Cadastre-se</h1>
+        <fieldset> <!-- borda em vonta da caixa de login -->
+            <legend>Informe Seus Dados</legend>
+            
+            <form name="cadastre-se">
+                usuario: <input type="text" name="usuario" autocomplete="off"><br><br>
+                Senha: <input type="password" name="senha" autocomplete="off"><br><br>
+                <button onclick="cadastrar(this.form)">cadastre-se</button>
+            </form>
+        </fieldset>
+    </body>
+</html>

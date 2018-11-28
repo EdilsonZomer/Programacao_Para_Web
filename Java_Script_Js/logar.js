@@ -3,12 +3,12 @@ function logar(evento) {
     evento.preventDefault();
 
     var form = document.getElementsByTagName("form")[0];
-    var nome = form.nome.value;
+    var usuario = form.usuario.value;
     var senha = form.senha.value;
 
     var cadastrados = JSON.parse(localStorage.getItem("contas"))
     var usuario = cadastrados.find(function(cadastro) {
-        return nome == cadastro.nome && senha == cadastro.senha;
+        return usuario == cadastro.usuario && senha == cadastro.senha;
     });
 
     if(usuario) {
