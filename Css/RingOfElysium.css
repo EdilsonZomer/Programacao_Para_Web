@@ -262,8 +262,8 @@ input[name="grupo"]:checked + label img {
 /*======================================MAPAS===================================*/
 
 .mapas img {
-    width: 232px;
-    height: 192px;
+    width: 450px;
+    height: 315px;
     margin: 3px;
     border: 2px solid white;
     border-radius: 16px;
