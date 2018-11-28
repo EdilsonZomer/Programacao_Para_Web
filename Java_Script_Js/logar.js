@@ -3,7 +3,7 @@ function logar(evento) {
     evento.preventDefault();
 
     var form = document.getElementsByTagName("form")[0];
-    var usuario = form.usuario.value;
+    var nome = form.usuario.value;
     var senha = form.senha.value;
 
     var cadastrados = JSON.parse(localStorage.getItem("contas"))
@@ -11,12 +11,12 @@ function logar(evento) {
         return usuario == cadastro.usuario && senha == cadastro.senha;
     });
 
-    if(usuario) {
-        alert("Usuario autenticado!");
+    if(usuario) { 
+        alert("Bem vindo "+" " + usuario.nome + ", " + "ao Beco diagonal!");
         window.location.href = "logado.html"
 
     } else {
-        alert("Usuario não encontrado");
+        alert("ERROU!!!.... ou você não existe!");
     }
 }
 
