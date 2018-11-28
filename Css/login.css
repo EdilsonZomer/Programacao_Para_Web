@@ -1,240 +1,93 @@
-
-
-/*==========================================================CSS DO HTMK LOGIN (ABAIXO)============================================*/
-.login input {
-    margin-left: 597px;
-    border-radius: 33;
-    border-radius: 10px;
-    width: 275px;
-    height: 40px;
-}
 .login h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: white;
-    margin-top: 130px;
-    margin-left: 597px;
-    text-transform: uppercase;
-}
-
-.login input {
-    right: 14%;
-    height: 40px;
-    margin-top: 3px;
-    padding: 12px;
-    width: 275px;
-    background-image: url('../Imagens/Social/user-logiin.png');
-    background-repeat: no-repeat;
-    background-position: 90%;
-    border: 1px solid #2f4550;;
-    border-radius: 14px;
-    
-}
-
-.senha input {
-    margin-left: 597px;
-    margin-top: 43px;
-    border-radius: 33;
-    border-radius: 10px;
-    width: 275px;
-    height: 40px;
-}
-.senha label {
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 21px;
-    font-size: 20px;
-    color: white;
-    margin-left: 597px;
-    text-transform: uppercase;
-    position: absolute;
-}
-.senha input {
-    right: 14%;
-    height: 40px;
-    margin-top: 43px;
-    padding: 12px;
-    width: 275px;
-    background-image: url('../Imagens/Social/chave.png');
-    background-repeat: no-repeat;
-    background-position: 90%;
-    border: 1px solid #2f4550;;
-    border-radius: 14px;
-}
-
-.login input:focus {
-    border: 2px solid;
-}
-
-.senha input:focus {
-    border: 2px solid;
-}
-
-.botaologar button {
-    margin-left: 663px;
-    margin-top: 35px;
-    border-radius: 33px;
-    width: 121px;
-    height: 47px;
-    text-transform: uppercase;
-}
-.cadastrar-se label{
-    margin-left: 627px;
-    margin-top: 23px;
-    font-size: 17px;
-    color: white;
-    text-transform: uppercase;
-    position: absolute;
-}
-
-.cadastrar-se button{
-    margin-left: 594px;
-    margin-top: 20px;
-    border-radius: 33px;
-    width: 22px;
-    height: 20px;
-}
-
-/*==========================================================CSS DO HTMK CADASTRO (ABAIXO)============================================*/
-.cadastrar input {
-    margin-left: 597px;
-    border-radius: 33;
-    border-radius: 10px;
-    width: 275px;
-    height: 40px;
-}
-
-.cadastrar input {
-    right: 14%;
-    height: 40px;
-    margin-top: 3px;
-    padding: 12px;
-    width: 275px;
-    background-image: url('../Imagens/Social/user-logiin.png');
-    background-repeat: no-repeat;
-    background-position: 90%;
-    border: 1px solid #2f4550;;
-    border-radius: 14px;
-}
-
-.cadastrar h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: white;
-    margin-top: 130px;
-    margin-left: 597px;
-    text-transform: uppercase;
-}
-
-.senha input {
-    margin-left: 597px;
-    margin-top: 43px;
-    border-radius: 33;
-    border-radius: 10px;
-    width: 275px;
-    height: 40px;
-}
-
-.senha label {
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 21px;
-    font-size: 20px;
-    color: white;
-    margin-left: 597px;
-    text-transform: uppercase;
-    position: absolute;
-}
-.senha input {
-    right: 14%;
-    height: 40px;
-    margin-top: 43px;
-    padding: 12px;
-    width: 275px;
-    background-image: url('../Imagens/Social/chave.png');
-    background-repeat: no-repeat;
-    background-position: 90%;
-    border: 1px solid #2f4550;;
-    border-radius: 14px;
-}
-
-.login input:focus {
-    border: 2px solid;
-    border-radius: 14px;
-}
-
-.senha input:focus {
-    border: 2px solid;
-    border-radius: 14px;
-}
-
-.botaocadastrar button {
-    margin-left: 663px;
-    margin-top: 35px;
-    border-radius: 33px;
-    width: 121px;
-    height: 47px;
-    text-transform: uppercase;
-}
-/*-----------------------------------------------------*/
-.retorna-login label{
-    margin-left: 627px;
-    margin-top: 23px;
-    font-size: 17px;
-    color: white;
-    text-transform: uppercase;
-    position: absolute;
-}
-
-.retorna-login button {
-    margin-left: 594px;
-    margin-top: 20px;
-    border-radius: 33px;
-    width: 22px;
-    height: 20px;
-}
-
-/*====================================================CSS DO HTML LOGADO (ABAIXO)=============================================*/
-
-.userlogar h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 37px;
-    margin-left: 658px;
-    color: white;
-    text-transform: uppercase;
-    margin-top: -108px;
-    position: absolute;
-}
-
-.userlogar .logado {
-    color: white;
-    font-size: 37px;
-    margin-top: 220px;
-    margin-bottom: 250px;
+    font-family: 'Times New Roman';
     text-align: center;
+    font-size: 52px;
     text-transform: uppercase;
+    color: white;
 }
 
-.sair button {
-    width: 120;
-    height: 50px;
-    margin-top: -103px;
-    margin-left: 680px;
+.login legend {
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.logar span{
+    font-size: 21px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 565px;
+    margin-top: 21px;
+    position: absolute;
+}
+
+.logar p {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 565px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    position: absolute;
+}
+.login .user {
+    width: 355px;
+    height: 45px;
+    margin: -25;
+    margin-top: 44px;
+    margin-left: 38%;
+    border-radius: 33px;
+    border: 2px solid #2f4550;
+    background-image: url('../Imagens/Social/user-logiin.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    border: 1px solid #2f4550;
+}
+
+.login .senha {
+    width: 355px;
+    height: 45px;
+    margin: -25;
+    margin-top: 44px;
+    margin-left: 38%;
+    border-radius: 33px;
+    border: 2px solid #2f4550;
+    background-image: url('../Imagens/Social/chave.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    border: 1px solid #2f4550;
+}
+
+.login button {
+    font-family: 'Times New Roman';
+    margin-left: 668px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    width: 124px;
+    height: 52px;
     border-radius: 33px;
 }
 
-.sair button:hover {
-    border: 2px solid #2f4550;
+.login button:hover {
+    border: 2px solid #2f4550
 }
 
+.cadastrar-se h2 {
+    font-size: 20px;
+    position: absolute;
+    margin-top: -124px;
+    margin-left: 595px;
+    text-transform: uppercase;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.cadastrar-se button {
+    width: 22px;
+    height: 22px;
+    margin-top: -126px;
+    margin-left: 559px;
+    margin-bottom: 200px;
+}
