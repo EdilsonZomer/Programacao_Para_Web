@@ -2,10 +2,11 @@ var contas = 'contas';
 var listaDeCadastros = JSON.parse(localStorage.getItem(contas)) || [];
 var comparar;
 function cadastrar(form){
+    
 
-   let cliente = { 
+   var cliente = { 
 
-    nome: form.nome.value,
+    usuario: form.usuario.value,
     senha: form.senha.value
 
     }

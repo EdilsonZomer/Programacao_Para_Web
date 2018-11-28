@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Login</title>
+    <title>Cadastro</title>
     <meta charset="UTF-8">
-    <script src="../Java_Script_Js/logar.js"></script>
+    <script src="../Java_Script_Js/cadastrar.js"></script>
 
     <style>
         body {
@@ -14,14 +14,14 @@
     </style>
 </head>
     <body>
-        <h1>LOGIN</h1>
+        <h1>Cadastre-se</h1>
         <fieldset> <!-- borda em vonta da caixa de login -->
             <legend>Informe Seus Dados</legend>
             
-            <form name="login">
-                Usuário: <input type="text" name="usuario" autocomplete="off"><br><br>
+            <form name="cadastre-se">
+                usuario: <input type="text" name="usuario" autocomplete="off"><br><br>
                 Senha: <input type="password" name="senha" autocomplete="off"><br><br>
-                <button onclick="logar(event)">Entrar</button>
+                <button onclick="cadastrar(this.form)">cadastre-se</button>
             </form>
         </fieldset>
     </body>
