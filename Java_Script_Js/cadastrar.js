@@ -6,7 +6,7 @@ function cadastrar(form){
 
    var cliente = { 
 
-    usuario: form.usuario.value,
+    nome: form.usuario.value,
     senha: form.senha.value
 
     }
