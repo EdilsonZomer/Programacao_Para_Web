@@ -1,0 +1,166 @@
+.funcoes-img img {
+    width: 242px;
+    height: 265px;
+    margin-top: 38px;
+}
+
+.funcoes-img img:hover {
+    cursor: pointer;
+}
+
+.armas {
+    margin-top: 3px;
+    margin-left: -21px;
+    margin-right: 725px;
+    text-align: center;
+}
+
+.armas {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.armas h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*-----------------------------------------*/
+.lacaios {
+    float: left;
+    margin-top: 3px;
+    margin-left: 261px;
+    margin-right: 498px;
+    text-align: center;
+}
+
+.lacaios {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.lacaios h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/*-----------------------------------------*/
+.magias {
+    float: left;
+    margin-top: 3px;
+    margin-left: 519px;
+    margin-right: 228px;
+}
+
+.magias {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.magias h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: inherit;
+}
+/*-----------------------------------------*/
+.herois {
+    float: left;
+    margin-top: 3px;
+    text-align: center;
+    margin-left: 758px;
+    margin-right: 0px;
+}
+
+.herois {
+    padding: 0 20px;
+    font-size: 19px;
+    color: #fff;
+    position: absolute;
+}
+
+.herois h2 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: inherit;
+}
+
+/*============================personagens==========================*/
+.Personagens img {
+    width: 242px;
+    height: 350px;
+    margin: 0px;
+    border-radius: 16px;
+}
+
+.Personagens img:hover {
+    cursor: pointer;
+}
+
+.Personagens a {
+    margin-top: 365px;
+    font-size: 74px;
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase
+}
+
+.Personagens ul ul {
+    visibility: hidden;
+}
+
+.Personagens ul li:hover ul {
+    visibility: visible;
+}
+
+.Personagens ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.preco h2 {
+    margin-top: -223px;
+    font-size: 30px;
+    padding: 15px;
+    margin-left: 990px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.livre {
+    position: absolute;
+    background: #bbd71d;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 200;
+    color: #2f4550;
+    border-radius: 7px;
+    margin-top: 23px;
+    margin-left: 540px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+}

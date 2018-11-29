@@ -152,9 +152,9 @@ input[name="grupo"]:checked + label img {
     width: 159;
     height: 42px;
     border-radius: 33px;
-    margin-left: 341px;
+    margin-left: 641px;
     margin-bottom: 152px;
-    margin-top: -72px;
+    margin-top: -85px;
     border: 2px solid black;
     text-transform: capitalize;
     font-size: 15.5px;
@@ -169,9 +169,9 @@ input[name="grupo"]:checked + label img {
     width: 181px;
     height: 70px;
     border-radius: 33px;
-    margin-left: 863px;
+    margin-left: 1038px;
     margin-bottom: 61px;
-    margin-top: -118px;
+    margin-top: -161px;
     border: 2px solid black;
     text-transform: capitalize;
     font-size: 15.5px;
@@ -350,7 +350,7 @@ input[name="grupo"]:checked + label img {
     display: inline-block;
     font-size: 17px;
     font-weight: 200;
-    color: #fff;
+    color: #2f4550;
     border-radius: 7px;
     margin-top: 23px;
     margin-left: 684px;
@@ -376,4 +376,16 @@ input[name="grupo"]:checked + label img {
     height: 50px;
     margin-left: 667px;
     margin-top: -135px;
+}
+
+.preco h2 {
+    margin-top: -223px;
+    font-size: 30px;
+    padding: 15px;
+    margin-left: 990px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
 }
