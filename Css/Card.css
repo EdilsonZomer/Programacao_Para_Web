@@ -27,15 +27,34 @@
     border-radius: 25px 25px 0 0 ;
 }
 .card-logo {
-    width: 63px;
+    width: 70px;
 }
 
-.product-img {
-    position: absolute;
-    left: 0;
-    margin-top: 42px;
-    margin-left: 123px;
-    width: 210px;
+.capaOver {
+  position: absolute;
+  left: 0;
+  margin-top: 92px;
+  margin-left: 10px;
+  width: 260px;
+  height: 149px;
+}
+
+.caparing {
+  position: absolute;
+  left: 0;
+  margin-top: 92px;
+  margin-left: 13px;
+  width: 255px;
+  height: 149px;
+}
+
+.capaheart {
+  position: absolute;
+  left: 0;
+  margin-top: 93px;
+  margin-left: 13;
+  width: 256px;
+  height: 149px;
 }
 
 .product-detail {
@@ -121,7 +140,7 @@
     font-size: 20px;
 }
 
-.comprar {
+.comprar button{
     position: absolute;
     background: #11e95b;
     padding: 7px 20px;
@@ -132,27 +151,25 @@
     color: #fff;
     border-radius: 7px;
     margin-top: -60px;
-    margin-left: 14px;
-    box-shadow: -10px 20px 15px -10px #353535 (17, 233, 91, 0.3);
+    margin-left: 15px;
 }
   
 .comprar b {
     margin-left: 5px;
 }
 
-.addcarrinho {
-    position: absolute;
-    background: #bbd71d;
-    padding: 7px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 17px;
-    font-weight: 200;
-    color: #fff;
-    border-radius: 7px;
-    margin-top: -59px;
-    margin-left: 138px;
-    box-shadow: -10px 20px 15px -10px #353535 (17, 233, 91, 0.3);
+.adicionarjogosaocarrinho button {
+  position: absolute;
+  background: #bbd71d;
+  padding: 7px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: -60px;
+  margin-left: 155px;
 }
   
 .addcarrinho b {
