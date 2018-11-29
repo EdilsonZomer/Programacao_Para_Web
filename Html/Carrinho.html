@@ -1,35 +1,114 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
+    <html lang="pt-br">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../Css/Index.css">
+        <link rel="stylesheet" href="../Css/Card.css">
+        <link rel="stylesheet" href="../Css/Overwatch.css">
+        <link rel="stylesheet" href="../Css/carrinho.css">
+    </head>
 
-<head>
-    <title> </title>
-    <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="../Java_Script_Js/CarrinhoDeCompras.js"></script>
+    <body>
+        <header class="menu-principal">
+            <main>
+                <div class="header-1">
+                    <div class="logo">
+                        <a href="../Html/Index.html">
+                            <img src="../Imagens/Social/Logo.png" alt="" width="120px" height="70px">
+                        </a>
+                    </div>
+                    <div class="redes-sociais">
+                        <ul>
+                            <!--Conecta com o Instagram-->
+                            <a href="https://www.instagram.com/">
+                                <li>
+                                    <img class="Instagram" src="../Imagens/Social/Instagram.png" alt="Instagram">
+                                </li>
+                            </a>
+                            <!--Conecta com o Facebook-->
+                            <a href="https://www.facebook.com/versaonerd/">
+                                <li>
+                                    <img class="Social" src="../Imagens/Social/Facebook.png" alt="Facebook">
+                                </li>
+                            </a>
+                            <!--Conecta com o Youtube-->
+                            <a href="https://www.youtube.com/channel/UCY1Ysw32voqz6CSIQWkSPCg">    
+                                <li>
+                                    <img class="Social" src="../Imagens/Social/Youtube.png" alt="Youtube">
+                                </li>
+                            </a>
+                            <!--Conecta com o linkedin-->
+                            <a href="https://www.linkedin.com/">    
+                                <li>
+                                    <img class="SocialLinkdin" src="../Imagens/Social/Linkdin.png" alt="Linkedin">
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </header>
+        <!-- ========== Menu botoes e pesquisa==========-->
+        <main class="col-100 menu-urls">
+            <div class="header-2">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="../Html/Index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Games</a>
+                        </li>
+                        <li>
+                            <a href="#">Ofertas</a>
+                        </li>
+                    </ul>
+                    <div class="busca">
+                        <input type="text" placeholder="Buscar Games"/>
+                    </div>
+                    <a href="../Html/Carrinho.html">
+                        <img  class="carrinhodecompras"  src="../Imagens/Social/Carrinho.png" alt="Carrinho">
+                    </a>
+                    <section>
+                        <a href="../Html/Logiin.html">
+                            <img class="usuario" src="../Imagens/Social/user.jpg" alt="usuario">
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <div class="Carcarrinho">
+                <h2>Carrinho de compras</h2>
+                
+                <button id="limpar-carrinho">Limpar Carrinho</button>
+                <div>
+                    <ul id="mostrar-carrinho"></ul>
+                    
+                </ul>
+                    <div class="total"> Total da Compra: R$ <span id="Total-da-Compra"></span></div>
+                </div>
+            
+                <a href="../Html/FinalizarCompra.html">
+                    <button class="finalizar"> Finalizar Compra </button>
+                </a>
+                <a href="../Html/Index.html">
+                    <button class="voltar"> Voltar a Loja </button>
+                </a>
+        </div>
+    
 
-</head>
 
-<body>
-    <h1>Carrinho de compras</h1>
+    <!--
+        <div>
+            <ul>
+                <li><a class="adicionar-ao-carrinho" href="#" data-nome="Dark Souls" data-preco="80.00">Dark Souls 80,00</a></li>
+                <li><a class="adicionar-ao-carrinho" href="#" data-nome="Overwatch" data-preco="150.00">Overwatch 150,00</a></li>
+            </ul>
+            
+        </div>
+    -->
 
-    <div>
-        <ul>
-            <li><a class="adicionar-ao-carrinho" href="#" data-nome="Dark Souls" data-preco="80.00">Dark Souls 80,00</a></li>
-            <li><a class="adicionar-ao-carrinho" href="#" data-nome="Overwatch" data-preco="150.00">Overwatch 150,00</a></li>
-        </ul>
-        <button id="limpar-carrinho">Limpar Carrinho</button>
-    </div>
-
-    <div>
-        <ul id="mostrar-carrinho"></ul>
-        
-    </ul>
-        <div> Total da Compra: R$ <span id="Total-da-Compra"></span></div>
-    </div>
-
-    <button> Finalizar Compra </button>
-    <button> Voltar a Loja </button>
     
 
 
@@ -199,8 +278,31 @@
 
     
     </script>
-
-
-</body>
-
+        <!--================================Codigo christiano-================================-->
+        <div class=" fiqueconectado">
+                <ul>
+                    <li>
+                        <a href="#">fique conectado conosco</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="informacao">
+                <h2>©2018 VERSAO NERD, INC. TODOS OS DIREITOS RESERVADOS.
+                        Todas as marcas registradas mencionadas são de propriedade de seus respectivos donos</h2>
+            </div>
+            <div class="socialfacebook">
+                <a href="https://www.facebook.com/versaonerd/">
+                    <img src="../Imagens/Social/Facebook.png" alt="facebook">
+                </a>
+            </div>
+            <div class="socialyoutube">
+                <a href="https://www.youtube.com/channel/UCY1Ysw32voqz6CSIQWkSPCg">
+                    <img src="../Imagens/Social/Youtube.png" alt="youtube">
+                </a>
+            </div>
+            <!--==============================SCRIPTS================================-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script src="../Java_Script_Js/CarrinhoDeCompras.js"></script>
+    </body>
 </html>

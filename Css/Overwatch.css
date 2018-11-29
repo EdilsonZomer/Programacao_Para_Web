@@ -123,6 +123,7 @@ input[name="grupo"]:checked + label img {
     float: left;
     width: 100%;
     background: #409180;
+    margin-top: -182px;
 }
 
 .descricao-funcao a {
@@ -154,7 +155,7 @@ input[name="grupo"]:checked + label img {
     border-radius: 33px;
     margin-left: 641px;
     margin-bottom: 152px;
-    margin-top: -85px;
+    margin-top: -262px;
     border: 2px solid black;
     text-transform: capitalize;
     font-size: 15.5px;
@@ -171,7 +172,7 @@ input[name="grupo"]:checked + label img {
     border-radius: 33px;
     margin-left: 1038px;
     margin-bottom: 61px;
-    margin-top: -161px;
+    margin-top: -370px;
     border: 2px solid black;
     text-transform: capitalize;
     font-size: 15.5px;
@@ -188,6 +189,7 @@ input[name="grupo"]:checked + label img {
     width: 250px;
     height: 150px;
     margin: 20px;
+    margin-top: -95px;
 }
 .tanque {
     float: left;
@@ -379,7 +381,7 @@ input[name="grupo"]:checked + label img {
 }
 
 .preco h2 {
-    margin-top: -223px;
+    margin-top: -332px;
     font-size: 30px;
     padding: 15px;
     margin-left: 990px;

@@ -1,7 +1,7 @@
 .funcoes-img img {
     width: 242px;
     height: 265px;
-    margin-top: 38px;
+    margin-top: -112px;
 }
 
 .funcoes-img img:hover {
@@ -113,7 +113,7 @@
 }
 
 .Personagens a {
-    margin-top: 365px;
+    margin-top: 239px;
     font-size: 74px;
     padding: 15px;
     display: block;
@@ -137,7 +137,7 @@
 }
 
 .preco h2 {
-    margin-top: -223px;
+    margin-top: -367px;
     font-size: 30px;
     padding: 15px;
     margin-left: 990px;
@@ -163,4 +163,38 @@
     margin-bottom: 40px;
     text-transform: uppercase;
 
+}
+
+.adccarrinho button {
+    width: 181px;
+    height: 70px;
+    border-radius: 33px;
+    margin-left: 1038px;
+    margin-bottom: 61px;
+    margin-top: -415px;
+    border: 2px solid black;
+    text-transform: capitalize;
+    font-size: 15.5px;
+}
+.adccarrinho button:hover {
+    border:2px solid red;
+    cursor: pointer;
+}
+
+
+.watchtrailerHST button {
+    width: 159;
+    height: 42px;
+    border-radius: 33px;
+    margin-left: 641px;
+    margin-bottom: 152px;
+    margin-top: -212px;
+    border: 2px solid black;
+    text-transform: capitalize;
+    font-size: 15.5px;
+}
+
+.watchtrailerHST button:hover {
+    border:2px solid red;
+    cursor: pointer;
 }

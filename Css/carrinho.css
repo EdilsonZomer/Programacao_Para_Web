@@ -1,32 +1,56 @@
-.titulocarrinho h2{
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
+.Carcarrinho h2{
     font-size: 30px;
-    margin-top: 105px;
-}
-.jogosadicionado {
-    opacity: 0.3;
-    width:auto;
-    height: 500;
-    background: white;
-}
-.jogosadicionado ul{
-    list-style: none;
-    position: relative;
-}
-
-.jogosadicionado ul li {
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin: 100px;
-}
-
-.jogosadicionado ul li a {
-    font-size: 20px;
-    width: 60px;
-    height: 60px;
     text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+}
+
+.Carcarrinho #limpar-carrinho {
+    width: 146px;
+    height: 57px;  
+    margin-left: 822px;    
+    margin-top: 500px;   
+    border-radius: 33px;
+    margin-bottom: 55px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.Carcarrinho ul {
+    display: inline-block;
+}
+
+.Carcarrinho .total {
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -186px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+
+}
+
+.Carcarrinho .finalizar {
+    width: 146px;
+    height: 57px;
+    margin-left: 647px;
+    margin-top: -112px;
+    border-radius: 33px;   
+    position: absolute;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.Carcarrinho .voltar {
+    width: 146px;
+    height: 57px;
+    margin-left: 475px;
+    margin-top: -112px;
+    border-radius: 33px;   
+    position: absolute;
+    font-size: 14px;
     text-transform: uppercase;
 }
