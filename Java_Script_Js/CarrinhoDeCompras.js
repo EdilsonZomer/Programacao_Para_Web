@@ -22,8 +22,6 @@ var carrinhoDeCompras = (function () {
 
     carregarCarrinho();
     
-
-
     var obj = {};
 
     obj.adicionarAoCarrinho = function (nome, preco, quantidade){
